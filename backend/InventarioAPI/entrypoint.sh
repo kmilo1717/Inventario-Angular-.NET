@@ -1,4 +1,4 @@
-
+#!/bin/bash
 set -e
 
 echo "Esperando a que la base de datos esté disponible..."
