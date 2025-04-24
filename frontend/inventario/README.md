@@ -1,27 +1,28 @@
-# Inventario
+# Frontend Angular v16
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+Proyecto frontend [Angular CLI](https://github.com/angular/angular-cli) version 16. Es un frotend sencillo de manejo de inventario.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Requisitos:
 
-## Code scaffolding
+- Node.js versión 20 o superior (recomendado: Node 23)
+- Angular CLI versión 16
+- Servidor backend instalado y en ejecución (consulta los pasos en el archivo del backend)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalation
 
-## Build
+Cona este repositorio
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+git clone https://github.com/kmilo1717/Inventario-Angular-.NET.git
+```
 
-## Running unit tests
+Despues de clonado, ejecuta el siguiente comando en la terminal:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+cd frontend/inventario && npm install && npm start
+```
 
-## Running end-to-end tests
+## Ejecucion
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Una vez que el proyecto instale dependencias y corra, ve a tu navegador de preferencia y abre `http://localhost:4200/`. 
