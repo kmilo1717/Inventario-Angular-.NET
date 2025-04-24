@@ -1,0 +1,15 @@
+## Build results
+bin/
+obj/
+out/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+.vscode/
+.vs/
+Generated_Code/
+*.log
+.DS_Store
+Thumbs.db
+node_modules/
