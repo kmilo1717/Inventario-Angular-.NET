@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: inventario-postgres
+    environment:
+      POSTGRES_DB: Inventario_test
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+      
+  backend:
+    build:
+      context: ./backend/InventarioAPI
+    container_name: inventario-backend
+    ports:
+      - "5178:5178"
+    depends_on:
+      - postgres
+
+  frontend:
+    build:
+      context: ./frontend/inventario
+    container_name: inventario-frontend
+    ports:
+      - "4200:4200" 
+    depends_on:
+      - backend
+
+volumes:
+  postgres-data:
+    driver: local
