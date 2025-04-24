@@ -22,6 +22,13 @@ cd backend/InventarioAPI
 ```
 
 4. Ejecuta migracion:
+
+Antes de ejecutar la migracion cambia la defaultconnection del archivo  `appsettings.Development.json`. Esto se hace porque por defecto esta para docker.
+
+```bash
+"DefaultConnection": "Host=localhost;Port=5432;Database=Inventario_test;Username=postgres;Password=postgres"
+```
+Lugo ahi si ejecuta la migracion:
    
 ```bash
 dotnet tool restore
