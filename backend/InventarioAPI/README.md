@@ -24,6 +24,7 @@ cd backend/InventarioAPI
 4. Ejecuta migracion:
    
 ```bash
+dotnet tool restore
 dotnet ef database update
 ```
 5. Ejecuta el proyecto en modo desarrollo:
