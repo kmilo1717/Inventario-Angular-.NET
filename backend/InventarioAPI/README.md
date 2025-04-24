@@ -21,12 +21,17 @@ git clone https://github.com/kmilo1717/Inventario-Angular-.NET.git
 cd backend/InventarioAPI
 ```
 
-3. Ejecuta el proyecto en modo desarrollo:
+4. Ejecuta migracion:
+   
+```bash
+dotnet ef database update
+```
+5. Ejecuta el proyecto en modo desarrollo:
 
 ```bash
 dotnet run
 ```
- 4. La API estará disponible en: `https://localhost:5001`
+ 6. La API estará disponible en: `http://localhost:5178`
 
 ## Endpoints principales
 
