@@ -4,8 +4,8 @@ Este es un proyecto backend construido con .NET 9.0 que provee una API sencilla 
 
 
 Requisitos
--.NET 9 SDK
--PostgreSQL corriendo en localhost:5432 con una base de datos llamada Inventario_test
+- .NET 9 SDK
+- PostgreSQL corriendo en localhost:5432 con una base de datos llamada Inventario_test
 
 ## Instalación y ejecución
 
