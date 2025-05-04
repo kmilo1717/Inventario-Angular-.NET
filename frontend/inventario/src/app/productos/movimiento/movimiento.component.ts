@@ -3,8 +3,8 @@ import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import { InventarioService } from 'src/app/services/inventario.service';
-import { Producto } from 'src/app/productos/models/producto.model';
-import { Movimiento } from 'src/app/productos/models/movimiento.model';
+import { Producto } from 'src/app/core/models/producto.model';
+import { Movimiento } from 'src/app/core/models/movimiento.model';
 
 @Component({
   selector: 'app-movimiento',

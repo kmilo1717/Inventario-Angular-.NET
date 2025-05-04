@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from './services/auth.services';
+import { take } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -14,9 +15,7 @@ export class AppComponent {
   constructor(private router: Router, private authService: AuthService) {}
 
   ngOnInit() {
-    this.authService.authenticated$.subscribe(authenticated => {
-      this.isAthenticated = authenticated
-    })
+    this.authService.authenticated$.subscribe(authenticated => this.isAthenticated = authenticated);
   }
 
   logout() {

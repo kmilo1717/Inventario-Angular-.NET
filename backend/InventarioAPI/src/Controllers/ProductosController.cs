@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using InventarioAPI.src.Services;
 using InventarioAPI.src.DTOs;
+using System.Security.Claims;
 [ApiController]
 [Route("api/productos")]
 [Authorize]
@@ -17,6 +18,7 @@ public class ProductosController : ControllerBase
     [HttpGet("inventario")]
     public async Task<IActionResult> GetInventario()
     {
+        var username = User.FindFirst(ClaimTypes.Name)?.Value;
         var productos = await _service.GetInventarioAsync();
         return Ok(productos);
     }

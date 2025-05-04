@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { AuthService } from '../../services/auth.services';
 import { Router } from '@angular/router';
 import { InventarioService } from 'src/app/services/inventario.service';
-import { Producto } from 'src/app/productos/models/producto.model';
+import { Producto } from 'src/app/core/models/producto.model';
 
 @Component({
   selector: 'app-inventario',

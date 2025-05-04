@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
 
       this.authService.login(username, password).subscribe({
         next: (response: any) => {
-          this.authService.setToken(response.token);
+          //this.authService.setToken(response.token);
           this.toastr.success('Inicio de sesión exitoso');
           this.router.navigate(['/productos/inventario']);
         },

@@ -3,8 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from '../enviroments/enviroments';
 import { AuthService } from './auth.services';
-import { Producto } from './../productos/models/producto.model';
-import { Movimiento } from '../productos/models/movimiento.model';
+import { Producto } from '../core/models/producto.model';
+import { Movimiento } from '../core/models/movimiento.model';
 
 @Injectable({
   providedIn: 'root'
